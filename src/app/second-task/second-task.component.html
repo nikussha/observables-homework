@@ -1,0 +1,8 @@
+<ng-container *ngIf="displayData$ | async as list">
+  <p class="counter" *ngIf="listitems">{{ listitems }} users in the list</p>
+  <div class="container" #container>
+    <p class="item" *ngFor="let item of list">
+      {{ item.user }}
+    </p>
+  </div>
+</ng-container>

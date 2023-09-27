@@ -1,0 +1,17 @@
+<input [formControl]="search" placeholder="type hero name" />
+
+<ng-container *ngIf="displayArray | async as heroesArray; else nohero">
+  <div class="content">
+    <p *ngFor="let hero of heroesArray">
+      {{ hero.name }}
+    </p>
+  </div>
+</ng-container>
+
+<ng-template #nohero>
+  <div class="content">
+    <p *ngFor="let hero of heroesArr">
+      {{ hero.name }}
+    </p>
+  </div>
+</ng-template>

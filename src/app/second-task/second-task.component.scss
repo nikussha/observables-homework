@@ -1,0 +1,50 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 300px;
+    width: 300px;
+    margin: 20px;
+    overflow: scroll;
+    padding: 10px;
+    background-color: rgb(106, 147, 171);
+    overflow-x: hidden;
+    .item{
+        height: 30px;
+        width: 100%;
+        margin: 10px auto;
+        background-color: white;
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 20px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        display: flex;
+        justify-content: space-between;
+       
+    }
+}
+
+.counter{
+    font-size: 25px;
+    color: #013272;
+    margin: 10px;
+}
+
+.container::-webkit-scrollbar {
+    width: 8px;
+    border-radius: 50%;
+ 
+}
+
+.container::-webkit-scrollbar-thumb {
+    background-color: #013272;
+    border-radius: 5px;
+}
+
+.container::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(1, 51, 116,0.6);
+    
+    
+}
